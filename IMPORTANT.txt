@@ -1,5 +1,8 @@
 # ALL Softwares
 
+https://renunciant-teams.netlify.app/
+
+
 - **SQL (MySQL)**
     - ✔ Works on **MySQL Command Line Client**.
     - ✔ Works on **MySQL Workbench**.
@@ -27,4 +30,5 @@ n short:
 
 - Use **MySQL Workbench / CLI** → standard SQL (DDL, DML).
 - Use **Oracle SQL*Plus** → PL/SQL (procedures, blocks, cursors).
+
 - Use **mongosh / Compass** → MongoDB queries.
