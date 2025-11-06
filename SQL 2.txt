@@ -1,0 +1,61 @@
+# SQL - 2
+
+**Design at least 10 SQL queries for selected real time application using SQL DML statements: Insert, select, Update, Delete with operators, functions and set operator.**
+
+ Create and Use Database
+CREATE DATABASE IF NOT EXISTS demo_db;
+USE demo_db;
+
+2️⃣ Create Employees Table
+DROP TABLE IF EXISTS employees;
+CREATE TABLE employees (
+    emp_id INT AUTO_INCREMENT PRIMARY KEY,
+    emp_name VARCHAR(50),
+    salary DECIMAL(10,2)
+);
+
+3️⃣ Insert New Employees
+INSERT INTO employees (emp_name, salary) VALUES ('pratik', 55000);
+INSERT INTO employees (emp_name, salary) VALUES ('rhutik', 40000);
+INSERT INTO employees (emp_name, salary) VALUES ('om', 48000);
+
+
+4️⃣ Select All Employees with Salary Greater than 50,000
+SELECT * FROM employees WHERE salary > 50000;
+
+5️⃣ Select Employees Whose Name Starts with 'A'
+SELECT * FROM employees WHERE emp_name LIKE 'A%';
+
+6️⃣ Select Employees Whose Salary is Between 40,000 and 60,000
+SELECT * FROM employees WHERE salary BETWEEN 40000 AND 60000;
+
+7️⃣ Update Salary of 'om' by 10% Increase
+UPDATE employees SET salary = salary * 1.10 WHERE emp_name = 'om';
+
+8️⃣ Delete Employees Earning Less than 45,000
+DELETE FROM employees WHERE salary < 45000;
+
+9️⃣ Use Aggregate Functions (COUNT, AVG, MAX)
+SELECT COUNT(*) AS total_employees,
+       AVG(salary) AS average_salary,
+       MAX(salary) AS highest_salary
+FROM employees;
+
+🔟 Display Names in Uppercase
+SELECT emp_id, UPPER(emp_name) AS employee_name, salary FROM employees;
+
+​
+1️⃣1️⃣ Use UNION to Combine Employees Above 60k and Employees Starting with 'C'
+SELECT emp_name, salary FROM employees WHERE salary > 60000
+UNION
+SELECT emp_name, salary FROM employees WHERE emp_name LIKE 'C%';
+
+​
+1️⃣2️⃣ Use UNION ALL (Keeps Duplicates)
+SELECT emp_name, salary FROM employees WHERE salary > 50000
+UNION ALL
+SELECT emp_name, salary FROM employees WHERE salary > 50000;
+
+
+
+

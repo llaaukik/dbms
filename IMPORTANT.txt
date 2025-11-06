@@ -1,0 +1,30 @@
+# ALL Softwares
+
+- **SQL (MySQL)**
+    - ✔ Works on **MySQL Command Line Client**.
+    - ✔ Works on **MySQL Workbench**.
+    
+    How to login SQL command line tool
+    
+    1. search MySQL command line tool in windows search
+    2. Username and password ⇒ **svit**
+
+
+- **PL/SQL (Oracle)**
+    - ✔ Works on **Oracle Database 21c XE** using **SQL*Plus** or **SQL Developer**.
+    
+    How to login 
+    
+    username : as sysdba
+    
+    password : as sysdba
+
+- **MongoDB**
+    - ✔ Shell commands work in **mongosh**.
+    - ✔ You can also run queries in **MongoDB Compass**
+
+n short:
+
+- Use **MySQL Workbench / CLI** → standard SQL (DDL, DML).
+- Use **Oracle SQL*Plus** → PL/SQL (procedures, blocks, cursors).
+- Use **mongosh / Compass** → MongoDB queries.
